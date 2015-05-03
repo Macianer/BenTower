@@ -316,10 +316,10 @@ typeof(GameObject));
 		float scale = 0.5f;
 		parent.transform.localScale = new Vector3 (scale, scale, scale);
 
-		StartCoroutine (ZerstöreGameobjekt (parent, animationsDauer));
+		StartCoroutine (ZerstöreObjekt (parent, animationsDauer));
 	}
 
-	private IEnumerator ZerstöreGameobjekt (GameObject o, float sekunden)
+	private IEnumerator ZerstöreObjekt (GameObject o, float sekunden)
 	{
 		yield return new WaitForSeconds (sekunden);
 		Destroy (o);
