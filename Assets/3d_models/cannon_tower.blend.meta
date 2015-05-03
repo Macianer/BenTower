@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: a72a6e0ec31a146e99ecdbef31207f27
+timeCreated: 1426575770
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cylinder
+    100004: Cylinder_001
+    100006: Cylinder_002
+    100008: Sphere
+    100010: barrel
+    100012: base_tower
+    100014: BezierCircle
+    100016: BezierCurve
+    100018: Camera_Target
+    100020: Cylinder_003
+    100022: Cylinder_004
+    100024: Cylinder_005
+    100026: Cylinder_006
+    100028: Cylinder_007
+    100030: Cylinder_008
+    100032: Cylinder_009
+    100034: Cylinder_010
+    100036: Cylinder_013
+    100038: Ground
+    100040: minus_Cylinder_001
+    100042: Window
+    100044: Window_001
+    100046: Window_002
+    100048: Window_003
+    100050: Circle
+    100052: Cylinder_011
+    400000: //RootNode
+    400002: Cylinder
+    400004: Cylinder_001
+    400006: Cylinder_002
+    400008: Sphere
+    400010: barrel
+    400012: base_tower
+    400014: BezierCircle
+    400016: BezierCurve
+    400018: Camera_Target
+    400020: Cylinder_003
+    400022: Cylinder_004
+    400024: Cylinder_005
+    400026: Cylinder_006
+    400028: Cylinder_007
+    400030: Cylinder_008
+    400032: Cylinder_009
+    400034: Cylinder_010
+    400036: Cylinder_013
+    400038: Ground
+    400040: minus_Cylinder_001
+    400042: Window
+    400044: Window_001
+    400046: Window_002
+    400048: Window_003
+    400050: Circle
+    400052: Cylinder_011
+    2300000: Cylinder
+    2300002: Cylinder_001
+    2300004: Cylinder_002
+    2300006: Sphere
+    2300008: barrel
+    2300010: base_tower
+    2300012: BezierCircle
+    2300014: BezierCurve
+    2300016: Cylinder_003
+    2300018: Cylinder_004
+    2300020: Cylinder_005
+    2300022: Cylinder_006
+    2300024: Cylinder_007
+    2300026: Cylinder_008
+    2300028: Cylinder_009
+    2300030: Cylinder_010
+    2300032: Cylinder_013
+    2300034: Ground
+    2300036: minus_Cylinder_001
+    2300038: Window
+    2300040: Window_001
+    2300042: Window_002
+    2300044: Window_003
+    2300046: Circle
+    2300048: Cylinder_011
+    3300000: Cylinder
+    3300002: Cylinder_001
+    3300004: Cylinder_002
+    3300006: Sphere
+    3300008: barrel
+    3300010: base_tower
+    3300012: BezierCircle
+    3300014: BezierCurve
+    3300016: Cylinder_003
+    3300018: Cylinder_004
+    3300020: Cylinder_005
+    3300022: Cylinder_006
+    3300024: Cylinder_007
+    3300026: Cylinder_008
+    3300028: Cylinder_009
+    3300030: Cylinder_010
+    3300032: Cylinder_013
+    3300034: Ground
+    3300036: minus_Cylinder_001
+    3300038: Window
+    3300040: Window_001
+    3300042: Window_002
+    3300044: Window_003
+    3300046: Circle
+    3300048: Cylinder_011
+    4300000: Cylinder_002
+    4300002: Cylinder_001
+    4300004: Cylinder
+    4300006: Sphere
+    4300008: Cylinder_013
+    4300010: Window_003
+    4300012: Window_002
+    4300014: Window_001
+    4300016: Ground
+    4300018: Cylinder_010
+    4300020: Cylinder_009
+    4300022: Cylinder_007
+    4300024: Cylinder_006
+    4300026: Cylinder_005
+    4300028: Cylinder_008
+    4300030: Cylinder_004
+    4300032: Cylinder_003
+    4300034: Window
+    4300036: BezierCircle
+    4300038: BezierCurve
+    4300040: barrel
+    4300042: minus_Cylinder_001
+    4300044: base_tower
+    4300046: Circle
+    4300048: Cylinder_011
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
