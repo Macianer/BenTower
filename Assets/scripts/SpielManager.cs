@@ -6,7 +6,7 @@ public class SpielManager : MonoBehaviour
 {
 	private static int MAXIMAL_ANZAHL_DER_KUGELN = 4;
 	private static int MAXIMAL_ANZAHL_DER_FEINDE = 1;
-	private static int MAXIMAL_ANZAHL_ZUTREFFENDER_FEINDE = 10;
+	private static int MAXIMAL_ANZAHL_ZUTREFFENDER_FEINDE = 2;
 	private static float ANNAEHERUNGSRATE_DER_FEINDE = 0.0005f;
 	private static float END_ZONEN_RADIUS = 3f;
 	private static float START_RADIUS = 8f;
@@ -313,7 +313,7 @@ typeof(GameObject));
 		o.transform.parent = parent.transform;
 
 		parent.transform.position = position;
-		float scale = 0.5f;
+		float scale = 0.1f;
 		parent.transform.localScale = new Vector3 (scale, scale, scale);
 
 		StartCoroutine (ZerstöreObjekt (parent, animationsDauer));
