@@ -32,6 +32,8 @@ ModelImporter:
     100048: Window_003
     100050: Circle
     100052: Cylinder_011
+    100054: PictureFrame
+    100056: PictureFrame_001
     400000: //RootNode
     400002: Cylinder
     400004: Cylinder_001
@@ -59,6 +61,8 @@ ModelImporter:
     400048: Window_003
     400050: Circle
     400052: Cylinder_011
+    400054: PictureFrame
+    400056: PictureFrame_001
     2300000: Cylinder
     2300002: Cylinder_001
     2300004: Cylinder_002
@@ -84,6 +88,8 @@ ModelImporter:
     2300044: Window_003
     2300046: Circle
     2300048: Cylinder_011
+    2300050: PictureFrame
+    2300052: PictureFrame_001
     3300000: Cylinder
     3300002: Cylinder_001
     3300004: Cylinder_002
@@ -109,6 +115,8 @@ ModelImporter:
     3300044: Window_003
     3300046: Circle
     3300048: Cylinder_011
+    3300050: PictureFrame
+    3300052: PictureFrame_001
     4300000: Cylinder_002
     4300002: Cylinder_001
     4300004: Cylinder
@@ -134,6 +142,8 @@ ModelImporter:
     4300044: base_tower
     4300046: Circle
     4300048: Cylinder_011
+    4300050: PictureFrame
+    4300052: PictureFrame_001
     7400000: Default Take
     9500000: //RootNode
   materials:

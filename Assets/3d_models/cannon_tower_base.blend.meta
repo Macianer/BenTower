@@ -19,6 +19,8 @@ ModelImporter:
     100022: Window_002
     100024: Window_003
     100026: Circle
+    100028: PictureFrame
+    100030: PictureFrame_001
     400000: barrel
     400002: base_tower
     400004: BezierCircle
@@ -33,6 +35,8 @@ ModelImporter:
     400022: Window_002
     400024: Window_003
     400026: Circle
+    400028: PictureFrame
+    400030: PictureFrame_001
     2300000: barrel
     2300002: base_tower
     2300004: BezierCircle
@@ -46,6 +50,8 @@ ModelImporter:
     2300020: Window_002
     2300022: Window_003
     2300024: Circle
+    2300026: PictureFrame
+    2300028: PictureFrame_001
     3300000: barrel
     3300002: base_tower
     3300004: BezierCircle
@@ -59,6 +65,8 @@ ModelImporter:
     3300020: Window_002
     3300022: Window_003
     3300024: Circle
+    3300026: PictureFrame
+    3300028: PictureFrame_001
     4300000: BezierCircle
     4300002: Window_003
     4300004: Window_002
@@ -72,6 +80,8 @@ ModelImporter:
     4300020: Cylinder
     4300022: base_tower
     4300024: Circle
+    4300026: PictureFrame
+    4300028: PictureFrame_001
     7400000: Default Take
     9500000: //RootNode
   materials:
