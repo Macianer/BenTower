@@ -4,12 +4,13 @@ using UnityEngine.UI;
 
 public class SpielManager : MonoBehaviour
 {
+	// definiere feste Werte
 	private static int MAXIMAL_ANZAHL_DER_KUGELN = 4;
 	private static int MAXIMAL_ANZAHL_DER_FEINDE = 1;
 	private static int MAXIMAL_ANZAHL_ZUTREFFENDER_FEINDE = 2;
 	private static float ANNAEHERUNGSRATE_DER_FEINDE = 0.0005f;
-	private static float END_ZONEN_RADIUS = 3f;
-	private static float START_RADIUS = 8f;
+	private static float MINIMAL_RADIUS = 3.0f;
+	private static float MAXIMAL_RADIUS = 8.0f;
 	public GameObject obererTurm;
 	public GameObject schiessAparat1;
 	public GameObject schiessAparat2;
@@ -25,7 +26,7 @@ public class SpielManager : MonoBehaviour
 	/**
 		 * Objekt welches emitiert wird. 
 		 */
-	private GameObject explosierendesObjekt ;
+	private GameObject explodierendesObjekt ;
 	private GameObject kanonenKugel;
 	private GameObject feindObject;
 	private GameObject naeherungsZone;
@@ -38,12 +39,13 @@ public class SpielManager : MonoBehaviour
 	private ArrayList geschosseneKugeln;
 
 	/**
-		 * Eine Liste mit Objekten aus denen geschossen werden kann. 
-	 	 */
+	 * Eine Liste mit Objekten aus denen geschossen werden kann. 
+	 */
 	private ArrayList schiessAparate;
 	private ArrayList feinde;
 	private float tasteGedrücktZeit;
-	// Use this for initialization
+
+	// Start-funktion zum Setzen der ersten Parameter. 
 	void Start ()
 	{
 		// lade Kanonen-Kugel  
@@ -71,12 +73,13 @@ public class SpielManager : MonoBehaviour
 
 		getroffenenFeindeText.text = getroffenenFeinde.ToString ();
 
-		explosierendesObjekt = (GameObject)Resources.Load ("Explode",
-typeof(GameObject));
-
-
+		explodierendesObjekt = (GameObject)Resources.Load ("Explode",
+		typeof(GameObject));
 	}
 		
+	/** 
+	 * Hier werden die Objekt, welche schiessen können zu geordnet.
+	 */
 	void konfiguriereSchiessAparate ()
 	{
 		// richte eine Liste von Schiess-Aparaten ein.
@@ -91,7 +94,9 @@ typeof(GameObject));
 		schiessAparate.Add (schiessAparat4);
 	}
 
-	// Update is called once per frame
+	/** Die Update-Funktion wird zu dem Frame ausgeführt. Die meisten Spiele laufen mit etwa 60 frame per second, also 60 bilder pro Sekunde. 
+	* Bei jedem neuem Bild oder Frame wird diese Funktion vom System aufgerufen. 
+	 */
 	void Update ()
 	{
 		float rotiereUm = Input.GetAxis ("Horizontal");
@@ -141,7 +146,7 @@ typeof(GameObject));
 	void erzeugeFeindObjekt ()
 	{
 		// definiert den Radius  
-		float radius = START_RADIUS;
+		float radius = MAXIMAL_RADIUS;
 		float höheFeindObjekt = 0.5f;
 		Vector3 punkt = new Vector3 (radius, höheFeindObjekt, 0.0f);
 		float random = Random.Range (-Mathf.PI / 2, Mathf.PI / 2);
@@ -192,13 +197,13 @@ typeof(GameObject));
 		//behandleNäherungsbereiche (minDistance);
 
 		// wenn das näheste Objekt den Endzone erreicht, ist das Spiel beendet.
-		if (minDistance <= END_ZONEN_RADIUS && minObjekt != null) {
+		if (minDistance <= MINIMAL_RADIUS && minObjekt != null) {
 			endZoneErreicht (minObjekt);
 		}
 		float scale = minDistance / 4.5f;
 		naeherungsRing.transform.localScale = new Vector3 (scale, scale, scale);
 
-		var intense = getInterpolateDistance (minDistance, START_RADIUS, END_ZONEN_RADIUS);
+		var intense = getInterpolateDistance (minDistance, MAXIMAL_RADIUS, MINIMAL_RADIUS);
 
 		float r = Mathf.Clamp01 (intense);
 		naeherungsRing.GetComponent<Renderer> ().material.color = new Color (1.0f, 0.0f, 0.0f, r);
@@ -300,8 +305,9 @@ typeof(GameObject));
 
 	void zeigeExplosion (Vector3 position)
 	{
+		// Erzeuge ein neues explodierende
 		GameObject o = (GameObject)Instantiate (
-			explosierendesObjekt);
+			explodierendesObjekt);
 
 		o.GetComponent<Animation> ().Play ("explode");
 		Animation ani = o.GetComponent<Animation> ();

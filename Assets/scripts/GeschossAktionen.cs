@@ -21,13 +21,14 @@ public class GeschossAktionen : MonoBehaviour {
 	void OnTriggerEnter (Collider other)
 	{
 		// Wenn die Kugel ein Objekt trifft, welches mit dem Name "Enemy" beginnt,
-		// wird im SpielManager die Methode <code>feindGetroffen(GameObject other)</code> 
+		// wird im SpielManager.cs die Methode <code>feindGetroffen(GameObject other)</code> 
 		// aufgerufen. 
 		if(other.gameObject.name.StartsWith ("Enemy")) {
 			manager.feindGetroffen (other.gameObject);
 		}	
+
 		// Wenn die Kugel ein Objekt trifft, welches mit den Tag "finish" hat,
-		// wird im SpielManager die Methode <code>landetAufDemBoden(GameObject other)</code> 
+		// wird im SpielManager.cs die Methode <code>landetAufDemBoden(GameObject other)</code> 
 		// aufgerufen. 
 		if (other.gameObject.tag == "Finish") {
 			manager.landetAufDemBoden (this.gameObject);
