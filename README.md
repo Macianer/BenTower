@@ -91,7 +91,7 @@ Die HappyEnd-Szene wird gestartet, wenn der Spieler das Spiel gewinnt.
 ### Skripte
 Skripte sind diejenigen Elemente, welche die gesamte Logik und das Verhalten beeinflussen.
 Das Schreiben der Skripte nennt man programmieren. Mithilfe der Programmierung wird in Unity3D der Spielablauf, die Steuerung und andere Komponenten beeinflusst. 
-In Unity3d kann man mehrere Skriptsprachen verwenden. Unity3d erlaubt das Programmieren mit C-Sharp und Javascript. Ich persönlich arbeite lieber mit C-Sharp (C#) statt Javascript.
+In Unity3d kann man mehrere Skriptsprachen verwenden. Unity3d erlaubt das Programmieren mit C-Sharp und Javascript. Ich persönlich arbeite lieber mit C-Sharp (C#) anstatt Javascript.
 Die Skriptdateien liegen in dem Ordner Assets->Scripts. 
 
 Um die Skripte zu bearbeiten, muss man innerhalb von Unity3d auf ein Skript-Objekt klicken. Anschliessend wird ein extra Programm zum Bearbeiten der Skripte gestartet. Unity3d verwendet stets die Programmier-Umgebung MonoDevelop zum Bearbeiten der Skripte. MonoDevelop wird automatisch bei der Installation von Unity3d mit installiert.
