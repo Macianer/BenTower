@@ -24,8 +24,8 @@ public class SpielManager : MonoBehaviour
 	private float drehGeschwindigkeit = 0.5f;
 
 	/**
-		 * Objekt welches emitiert wird. 
-		 */
+	* Objekt welches emitiert wird. 
+	*/
 	private GameObject explodierendesObjekt ;
 	private GameObject kanonenKugel;
 	private GameObject feindObject;
@@ -155,9 +155,7 @@ public class SpielManager : MonoBehaviour
 		feinde.Add (feind);
 			
 	}
-
-
-
+	
 	/**
 	 * Eine Funktion die feindliche Objekten näher kommen lässt. 
 	 * Alle Objekte in der "feinde" Liste kommen ein kleines Stückchen näher.
